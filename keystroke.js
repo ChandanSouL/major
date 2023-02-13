@@ -1,7 +1,8 @@
 let textBox = document.getElementById('message');
 const btn = document.getElementById('btn');
 const data = [];
-
+let backspaceCounter = 0;
+const input = document.querySelector("input");
 const Key = [];
 const downTime = [];
 const upTime = [];
@@ -19,6 +20,13 @@ textBox.addEventListener('keyup', (event) => {
     const key = event.key;
     upTime.push(uptime);
     Key.push(key);
+});
+
+// count of backspace
+input.addEventListener("keydown",function(event){
+    if(event.key==="Backspace"){
+        backspaceCounter++;
+    }
 });
 
 btn.addEventListener('click', (e) => {
