@@ -29,7 +29,6 @@ input.addEventListener("keydown",function(event){
     }
 });
 // vovoe
-// abji
 
 btn.addEventListener('click', (e) => {
     for (let i = 0; i < Key.length; i++) {
