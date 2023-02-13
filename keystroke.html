@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Keyboard Input</title>
+  <style>
+    #container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+  
+      h2 {
+        margin-bottom: 20px;
+      }
+    #message {
+      width: 300px;
+      height: 50px;
+      font-size: 20px;
+      padding: 10px;
+      border: 1px solid rgb(11, 8, 8);
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    #btn {
+      width: 100px;
+      height: 40px;
+      background-color: rgb(17, 120, 155);
+      color: white;
+      font-size: 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+    <div id="container">
+        <h2>Write Here:</h2>
+        <input type="text" id="message">
+        <button id="btn">Submit</button>
+      </div>
+  <script src="../js/keystroke.js">   </script>
+  <script src="node_modules/file-saver/dist/FileSaver.min.js"></script>
+  <script>
+    const btn = document.querySelector("#btn");
+    btn.addEventListener("click", function() {
+      window.location.href = "./output.html";
+    });
+  </script>
+</body>
+</html>

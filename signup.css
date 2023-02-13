@@ -1,0 +1,31 @@
+.signup-container {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  form {
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+  }
+  
+  .form-field {
+    margin: 20px 0;
+    text-align: left;
+  }
+  
+  label, input {
+    display: block;
+    font-size: 20px;
+  }
+  
+  button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  

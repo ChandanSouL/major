@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+</head>
+<body>
+    <h1>
+        output
+    </h1>
+    <script>
+        const medianDuration = localStorage.getItem('median');
+        var data = JSON.parse(localStorage.getItem('data'));
+        
+        
+        
+        console.log(data)
+        
+
+        document.write(medianDuration);
+        document.write(data);
+        var keys = [];
+
+document.write("<table border==\"1\"><tr>");
+for (key in data[0]) {
+	document.write('<td>' + key + '</td>');
+}
+document.write("</tr>");
+for (var i = 0; i < data.length; i++) {
+	document.write('<tr>');
+	for (key in data[i]) {
+  	document.write('<td>' + data[i][key] + '</td>');
+  }
+	document.write('</tr>');
+}
+document.write("</table>");
+
+    </script>
+    
+    
+</body>
+</html>
